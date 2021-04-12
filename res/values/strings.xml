@@ -1,0 +1,15 @@
+<resources>
+    <string name="gameboard_image">gameboard</string>
+    <string name="new_game_text">New Game</string>
+    <string name="turn_text">turn:</string>
+    <string name="three_in_a_row_text">Three in a row, remove one</string>
+    <string name="red_wins_text">RED WINS!</string>
+    <string name="blue_wins_text">BLUE WINS!</string>
+    <string name="blue_make_move_text">BLUE: MOVE MARKER</string>
+    <string name="red_make_move_text">RED: MOVE MARKER</string>
+    <string name="red_place_text">RED: PLACE MARKER</string>
+    <string name="blue_place_text">BLUE: PLACE MARKER</string>
+    <string name="red_remove_text">RED: REMOVE ONE BLUE</string>
+    <string name="blue_remove_text">BLUE: REMOVE ONE RED</string>
+    <string name="nine_men_morris_text">Nine Men\'s Morris</string>
+</resources>

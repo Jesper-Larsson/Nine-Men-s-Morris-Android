@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/splash_background_color"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/gameboardView"
+        android:layout_width="wrap_content"
+        android:layout_height="412dp"
+        android:background="#E0E0E0"
+        android:contentDescription="@string/gameboard_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_nine_men_s_morris_board" />
+
+    <ImageView
+        android:id="@+id/highlightMarkerView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_marker_shadowhighlight" />
+
+    <com.example.ninemensmorris.TouchView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gameboardView"
+        app:layout_constraintEnd_toEndOf="@+id/gameboardView"
+        app:layout_constraintStart_toStartOf="@+id/gameboardView"
+        app:layout_constraintTop_toTopOf="@+id/gameboardView" />
+
+    <Button
+        android:id="@+id/button_new_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="newGameButtonPress"
+        android:text="@string/new_game_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameboardView" />
+
+
+    <TextView
+        android:id="@+id/turnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="@string/turn_text"
+        app:layout_constraintBottom_toTopOf="@+id/button_new_game"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameboardView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

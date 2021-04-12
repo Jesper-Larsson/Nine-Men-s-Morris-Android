@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:opacity="opaque">
+    <item android:drawable= "@color/splash_background_color"/>
+    <item android:drawable="@drawable/ic_baseline_marker_red" android:gravity="center" />
+    <item android:drawable="@drawable/ic_baseline_marker_blue" android:gravity="center" android:bottom="150dp" />
+
+</layer-list>
